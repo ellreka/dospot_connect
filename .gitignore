@@ -1,7 +1,7 @@
 /__pycache__
-/.python-version
 /build
 /dist
-chromedriver
-connect.spec
+/.python-version
 .DS_Store
+/chromedriver
+/connect.spec
