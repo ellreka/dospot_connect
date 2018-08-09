@@ -14,8 +14,7 @@ def App(event):
         # options.add_argument('--headless')
         current_folder = os.path.dirname(os.path.abspath(__file__))
         driver_path = os.path.join(current_folder, 'chromedriver')
-        print("絶対パス" + current_folder)
-        print("ドライバー"+driver_path)
+        print("chromedriver-path:" + driver_path)
         driver = webdriver.Chrome(executable_path=driver_path)
         # driver = webdriver.Chrome(chrome_options=options)
         driver.get('https://do-spot.net')
@@ -27,7 +26,7 @@ def App(event):
         time.sleep(1)
         driver.quit()
         now = datetime.datetime.now()
-        os.system(f"terminal-notifier -title 'do-spot' -message '接続に成功しました({str(now)})' -sound default")
+        os.system("osascript -e 'display notification\"接続に成功しました({})\"'".format(str(now)))
         print("接続に成功しました(" + str(now) + ")")
 
 

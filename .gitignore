@@ -1,6 +1,3 @@
 /__pycache__
-/build
-/dist
-/chromedriver
-/connect.spec
 /.python-version
+/.DS_Store

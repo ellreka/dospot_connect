@@ -1,0 +1,3 @@
+([('connect',
+   '/Users/kozakana/src/github.com/my-work/do_spot/dist/connect',
+   'EXECUTABLE')],)
