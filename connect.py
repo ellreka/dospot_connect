@@ -5,9 +5,7 @@ import string
 import time
 import os
 import datetime
-# import tkinter
 
-# def App(event):
 def worker():
     address = ''.join(random.choices(string.ascii_letters, k=20))
     options = Options()
@@ -35,12 +33,3 @@ interval = 780
 while True:
     worker()
     time.sleep(interval)
-
-
-# root = tkinter.Tk()
-# root.title("dospot_connect")
-# root.geometry("300x300+1500+10")
-# Button = tkinter.Button(text=u'connect', width=50)
-# Button.bind("<Button-1>",App) 
-# Button.pack()
-# root.mainloop()
